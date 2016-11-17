@@ -6,7 +6,6 @@
   roles:
     - common
     - repo_install
-    - mysql
     - php7
     - nginx
     - beanstalkd
