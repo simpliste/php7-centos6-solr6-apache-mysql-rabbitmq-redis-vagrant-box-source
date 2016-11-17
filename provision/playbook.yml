@@ -8,6 +8,5 @@
     - repo_install
     - php7
     - nginx
-    - memcached
     - composer
     - bash
