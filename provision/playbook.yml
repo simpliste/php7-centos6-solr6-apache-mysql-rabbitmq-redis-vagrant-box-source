@@ -8,7 +8,6 @@
     - repo_install
     - php7
     - nginx
-    - beanstalkd
     - redis
     - memcached
     - composer
