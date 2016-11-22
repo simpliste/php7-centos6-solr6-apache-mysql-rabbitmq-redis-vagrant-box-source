@@ -1,0 +1,8 @@
+---
+download_url: http://download.oracle.com/otn-pub/java/jdk/8u112-b15/jre-8u112-linux-x64.rpm
+
+download_folder: "~"
+
+java_rpm: "jre-8u112-linux-x64.rpm"
+
+java_rpm_file_local: "{{download_folder}}/{{java_rpm}}"

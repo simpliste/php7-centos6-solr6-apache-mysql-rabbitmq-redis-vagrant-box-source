@@ -1,0 +1,17 @@
+---
+- name: Download Java
+  get_url:
+    url: "{{download_url}}"
+    dest: "{{java_rpm_file_local}}"
+    headers: 'Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie'
+
+- name: Yum localinstall Java
+  yum:
+    name: "{{java_rpm_file_local}}"
+    state: latest
+    disable_gpg_check: yes
+  ignore_errors: True
+
+- name: Clean up
+  file: state=absent path={{java_rpm_file_local}}
+
