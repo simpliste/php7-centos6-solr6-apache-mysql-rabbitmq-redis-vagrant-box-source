@@ -1,7 +1,7 @@
 ---
-- name: Add html folder
+- name: Add htdocs folder
   file:
-    path: /var/www/html/
+    path: /var/www/htdocs/
     state: directory
     mode: 0755
     owner: vagrant
