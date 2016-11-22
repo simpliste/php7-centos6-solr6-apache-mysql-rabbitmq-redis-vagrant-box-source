@@ -1,0 +1,19 @@
+---
+- name: Add Elasticsearch repo
+  template:
+    src: elasticsearch.repo.j2
+    dest: /etc/yum.repos.d/elasticsearch.repo
+    mode: 0644
+    owner: root
+    group: root
+
+- name: Install Elasticsearch
+  yum:
+    name: elasticsearch
+    state: latest
+
+- name: Start Elasticsearch
+  service:
+    name: elasticsearch
+    state: started
+    enabled: true

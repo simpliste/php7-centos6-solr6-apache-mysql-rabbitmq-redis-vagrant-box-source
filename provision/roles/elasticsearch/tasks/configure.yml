@@ -1,0 +1,9 @@
+---
+- name: Add logging configuration
+  template:
+    src: logging.yml.j2
+    dest: /etc/elasticsearch
+    mode: 0644
+    owner: root
+    group: root
+  notify: Restart Elasticsearch
