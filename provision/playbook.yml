@@ -6,6 +6,7 @@
   roles:
     - common
     - repo_install
+    - capistrano
     - php7
     - nginx
     - beanstalkd
