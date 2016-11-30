@@ -8,6 +8,7 @@
     - repo_install
     - php7
     - nginx
+    - beanstalkd
     - composer
     - bash
     - java
