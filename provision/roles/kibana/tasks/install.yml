@@ -12,6 +12,15 @@
     name: kibana
     state: latest
 
+- name: get installed kibana plugins list
+  command: "bin/kibana plugin --list chdir=/opt/kibana"
+  changed_when: false
+  register: kibana_installed_plugins
+
+- name: install Kibana sense plugin
+  command: "bin/kibana plugin --install elastic/sense chdir=/opt/kibana"
+  when: "'sense' not in kibana_installed_plugins.stdout"
+
 - name: Start Kibana
   service:
     name: kibana
