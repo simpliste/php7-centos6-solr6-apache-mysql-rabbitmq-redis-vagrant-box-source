@@ -7,7 +7,7 @@ ANSIBLE_PATH = "provision"
 
 Vagrant.configure(2) do |config|
   # Enable virtual box shared folder for usage on windows (default is rsync)
-  config.vm.synced_folder ".", "/vagrant", type: "virtualbox"
+  config.vm.synced_folder ".", "/vagrant", disabled: true
 
   # Which centos box should be used? #https://atlas.hashicorp.com/centos/boxes/6/versions/1610.01
   config.vm.box = "centos/6"
