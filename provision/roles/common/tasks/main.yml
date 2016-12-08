@@ -9,6 +9,7 @@
   yum: pkg={{ item }} state=installed
   with_items:
   - vim
+  - telnet
   - git
   - tree
   - screen
