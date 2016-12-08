@@ -38,5 +38,6 @@ Source environment for my [PHP7 CentOS Elasticsearch vagrant box](https://atlas.
 * `sudo dd if=/dev/zero of=/bigemptyfile bs=1M`
 * `sudo rm -rf /bigemptyfile`
 * `sudo su`
+* `rm /etc/udev/rules.d/70-persistent-net.rules`
 * `history -c && exit`
 * `cat /dev/null > ~/.bash_history && history -c && exit`
