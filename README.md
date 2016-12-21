@@ -1,10 +1,13 @@
-# php7-centos-elasticsearch-vagrant-box-source
+# php7 Elasticsearch Nginx Centos Vagrant Box
 
-Source environment for my [PHP7 CentOS Elasticsearch vagrant box](https://atlas.hashicorp.com/ajnijland/boxes/centos6-php7-elasticsearch/versions/0.1.0). Provisioned using Ansible.
+Source environment for my [PHP7 CentOS Elasticsearch vagrant box](https://atlas.hashicorp.com/ajnijland/boxes/centos6-php7-elasticsearch). Provisioned using Ansible.
 
 ### Pre-reqs
 
 * [Ansible](http://docs.ansible.com/ansible/index.html)
+
+### Versions
+
 * CentOS release 6.8 (Final)
 * Nginx 1.10.2
 * PHP 7.0.13
@@ -34,10 +37,10 @@ Source environment for my [PHP7 CentOS Elasticsearch vagrant box](https://atlas.
 
 ### Pre-packaging commands
 
+* `sudo rm /etc/udev/rules.d/70-persistent-net.rules`
 * `sudo yum clean all`
 * `sudo dd if=/dev/zero of=/bigemptyfile bs=1M`
 * `sudo rm -rf /bigemptyfile`
 * `sudo su`
-* `rm /etc/udev/rules.d/70-persistent-net.rules`
 * `history -c && exit`
 * `cat /dev/null > ~/.bash_history && history -c && exit`
