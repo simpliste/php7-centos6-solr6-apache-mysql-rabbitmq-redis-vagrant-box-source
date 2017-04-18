@@ -1,0 +1,10 @@
+---
+- name: Install MySQL repo
+  yum:
+    name: "{{ mysql_repo_url }}"
+    state: present
+
+- name: Install MySQL server
+  yum:
+    name: "mysql-community-server-{{ mysql_version }}"
+    state: present

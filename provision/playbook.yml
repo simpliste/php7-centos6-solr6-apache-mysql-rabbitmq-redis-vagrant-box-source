@@ -8,6 +8,7 @@
     - repo_install
     - capistrano
     - php7
+    - mysql
     - nginx
     - beanstalkd
     - composer
