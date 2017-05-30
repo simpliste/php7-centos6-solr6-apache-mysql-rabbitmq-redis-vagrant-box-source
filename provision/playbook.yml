@@ -6,7 +6,6 @@
   roles:
     - common
     - repo_install
-    - capistrano
     - php7
     - mysql
     - nginx
