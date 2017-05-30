@@ -10,7 +10,6 @@
     - php7
     - mysql
     - nginx
-    - beanstalkd
     - composer
     - bash
     - java
