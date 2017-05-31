@@ -1,7 +1,7 @@
 ---
 php_packages:
   - php70w
-  - php70w-bcmatch
+  - php70w-bcmath
   - php70w-cli
   - php70w-common
   - php70w-devel

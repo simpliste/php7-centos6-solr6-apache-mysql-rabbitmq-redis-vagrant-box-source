@@ -9,4 +9,3 @@
   with_items:
     - /etc/php-zts.d/ast.ini
     - /etc/php.d/ast.ini
-  notify: Restart PHP-FPM

@@ -4,9 +4,3 @@
     pkg: "{{ item }}"
     state: latest
   with_items: "{{ php_packages }}"
-
-- name: Start PHP-FPM
-  service:
-    name: php-fpm
-    state: started
-    enabled: true
