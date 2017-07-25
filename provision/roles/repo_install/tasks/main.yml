@@ -8,3 +8,8 @@
   yum:
     name: https://mirror.webtatic.com/yum/el6/latest.rpm
     state: present
+
+- name: Add IUS RPM
+  yum:
+    name: https://centos6.iuscommunity.org/ius-release.rpm
+    state: present
