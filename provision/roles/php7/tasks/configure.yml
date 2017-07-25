@@ -22,13 +22,3 @@
     mode: 0644
     owner: root
     group: root
-
-- name: Change ownership of PHP session and cache folders
-  file:
-    path: "/var/lib/php/{{ item }}"
-    owner: vagrant
-    group: vagrant
-    mode: 0770
-  with_items:
-    - session
-    - wsdlcache
