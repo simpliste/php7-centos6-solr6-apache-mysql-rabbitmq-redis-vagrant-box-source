@@ -10,7 +10,7 @@
   with_items:
   - vim
   - telnet
-  - git
+  - git2u
   - tree
   - screen
   - gcc
