@@ -4,7 +4,14 @@
     name: "{{ mysql_repo_url }}"
     state: present
 
-- name: Install MySQL server
+- name: Install MySQL
   yum:
-    name: "mysql-community-server-{{ mysql_version }}"
+    name: "mysql"
+    enablerepo: remi
+    state: present
+
+- name: Install MySQL Server
+  yum:
+    name: "mysql-server"
+    enablerepo: remi
     state: present
