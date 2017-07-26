@@ -6,9 +6,11 @@
   roles:
     - repo_install
     - common
+    - java
+    - solr
     - mysql
     - redis
     - php7
     - composer
     - bash
-    - java
+
