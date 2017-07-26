@@ -7,6 +7,7 @@ php_packages:
   - php71u-devel
   - php71u-fpm
   - php71u-gd
+  - php71u-json
   - php71u-intl
   - php71u-mbstring
   - php71u-mcrypt
