@@ -1,13 +1,14 @@
 ---
 - name: "Provision Vagrant"
   hosts: default
-  sudo: yes
+  become: true
   remote_user: vagrant
   roles:
-    - common
     - repo_install
-    - php7
+    - common
     - mysql
+    - redis
+    - php7
     - composer
     - bash
     - java
