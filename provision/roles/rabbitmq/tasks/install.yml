@@ -1,0 +1,29 @@
+---
+- name: Install Socat
+  yum:
+    name: socat
+    state: latest
+
+- name: Set rabbitmq-erlang repo
+  template:
+    src: rabbitmq-erlang.repo.j2
+    dest: /etc/yum.repos.d/rabbitmq-erlang.repo
+    mode: 0644
+    owner: root
+    group: root
+
+- name: Install Erlang
+  yum:
+    name: erlang
+    state: latest
+
+- name: Install RabbitMQ
+  yum:
+    name: "{{ rabbitmq_repo_url }}"
+    state: present
+
+- name: Start RabbitMQ
+  service:
+    name: rabbitmq-server
+    state: started
+    enabled: true

@@ -1,0 +1,2 @@
+---
+rabbitmq_repo_url: "https://github.com/rabbitmq/rabbitmq-server/releases/download/rabbitmq_v3_6_10/rabbitmq-server-3.6.10-1.el6.noarch.rpm"

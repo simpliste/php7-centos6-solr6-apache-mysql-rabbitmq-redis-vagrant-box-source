@@ -6,6 +6,7 @@
   roles:
     - repo_install
     - common
+    - rabbitmq
     - java
     - solr
     - mysql

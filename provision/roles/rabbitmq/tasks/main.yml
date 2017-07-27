@@ -1,0 +1,5 @@
+---
+# Install Redis server
+- include: install.yml
+
+
