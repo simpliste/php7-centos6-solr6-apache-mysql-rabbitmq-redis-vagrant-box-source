@@ -22,6 +22,9 @@
     name: "{{ rabbitmq_repo_url }}"
     state: present
 
+- name: Install RabbitMQ management plugin
+  command: "rabbitmq-plugins enable rabbitmq_management"
+
 - name: Start RabbitMQ
   service:
     name: rabbitmq-server
