@@ -14,4 +14,4 @@
     - php7
     - composer
     - bash
-
+    - apache
