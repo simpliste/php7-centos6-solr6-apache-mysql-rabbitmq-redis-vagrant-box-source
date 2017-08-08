@@ -10,14 +10,15 @@ Source environment for my[Centos6 php7 Solr Apache Mysql Redis vagrant box](http
 > Basebox:centos/6 1706.02
 
 * CentOS release 6.9 (Final)
-* PHP 7.1.7
-* MySQL 5.5.54
+* MySQL 5.5.x
 * Java JRE 8u131
-* Redis 3.2.9
-* Composer 1.4.2
-* Git 2.13.2
+* Redis 3.2.*
+* Git 2.x
 * PHPUnit 6.1.0
 * Solr 6.2.1
+* Apache 2.x
+* Composer - latest
+* PHP 7.1.x
 
 
 ### Instructions
