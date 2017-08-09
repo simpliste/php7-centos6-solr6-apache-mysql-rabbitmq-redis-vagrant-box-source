@@ -1,6 +1,6 @@
-# Centos6 php7 Solr Apache Mysql Redis Vagrant Box
+# php7 Centos6 Solr6 Apache Mysql RabbitMQ Redis Vagrant Box
 
-Source environment for my [Centos6 php7 Solr Apache Mysql Redis](https://atlas.hashicorp.com/ajnijland/boxes/centos6-php7-solr-apache-mysql-redis) vagrant box. Provisioned using Ansible.
+Source environment for my [Centos6 php7 Solr Apache Mysql Redis](https://app.vagrantup.com/ajnijland/boxes/centos6-php7-solr-apache-mysql-redis) vagrant box. Provisioned using Ansible.
 
 ### Pre-reqs
 
@@ -19,6 +19,7 @@ Source environment for my [Centos6 php7 Solr Apache Mysql Redis](https://atlas.h
 * Apache 2.x
 * Composer - latest
 * PHP 7.1.x
+* RabbitMQ 3.6.10
 
 
 ### Instructions
