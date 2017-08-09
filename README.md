@@ -1,6 +1,6 @@
 # Centos6 php7 Solr Apache Mysql Redis Vagrant Box
 
-Source environment for my[Centos6 php7 Solr Apache Mysql Redis vagrant box](https://atlas.hashicorp.com/ajnijland/boxes/centos6-php7-solr-apache-mysql-redis). Provisioned using Ansible.
+Source environment for my [Centos6 php7 Solr Apache Mysql Redis](https://atlas.hashicorp.com/ajnijland/boxes/centos6-php7-solr-apache-mysql-redis) vagrant box. Provisioned using Ansible.
 
 ### Pre-reqs
 
