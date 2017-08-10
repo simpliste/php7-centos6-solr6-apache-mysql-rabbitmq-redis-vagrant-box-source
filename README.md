@@ -7,7 +7,7 @@ Source environment for my [Centos6 php7 Solr Apache Mysql Redis](https://app.vag
 * [Ansible](http://docs.ansible.com/ansible/index.html)
 
 ### Versions
-> Basebox:centos/6 1706.02
+> Basebox:centos/6 1707.01
 
 * CentOS release 6.9 (Final)
 * MySQL 5.5.x
