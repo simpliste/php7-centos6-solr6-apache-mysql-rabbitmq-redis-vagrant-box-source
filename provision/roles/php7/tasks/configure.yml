@@ -10,7 +10,7 @@
 - name: Configure PHP Xdebug
   template:
     src: xdebug.ini.j2
-    dest: /etc/php.d/xdebug.ini
+    dest: /etc/php.d/15-xdebug.ini
     mode: 0644
     owner: root
     group: root
@@ -18,7 +18,7 @@
 - name: Configure PHP-ZTS Xdebug
   template:
     src: xdebug-zts.ini.j2
-    dest: /etc/php-zts.d/xdebug.ini
+    dest: /etc/php-zts.d/15-xdebug.ini
     mode: 0644
     owner: root
     group: root
