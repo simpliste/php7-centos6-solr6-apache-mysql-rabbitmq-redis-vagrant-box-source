@@ -11,7 +11,11 @@ Vagrant.configure(2) do |config|
 
   # Which centos box should be used? #https://atlas.hashicorp.com/centos/boxes/6/versions/
   config.vm.box = "centos/6"
-  config.vm.box_version = "1707.01"
+  config.vm.box_version = "1708.01"
+
+  config.vm.provider :virtualbox do |vb|
+    vb.name = "pcsamrrvbs"
+  end
 
   # Execute the ansible versions
   config.vm.provision :ansible do |ansible|
