@@ -13,6 +13,7 @@ Vagrant.configure(2) do |config|
   config.vm.box = "centos/6"
   config.vm.box_version = "1708.01"
 
+  # The name of the box cannot be to long, because this will give problems on windows
   config.vm.provider :virtualbox do |vb|
     vb.name = "pcsamrrvbs"
   end
