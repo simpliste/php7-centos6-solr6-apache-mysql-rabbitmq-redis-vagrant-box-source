@@ -7,7 +7,7 @@ Source environment for my [Centos6 php7 Solr Apache Mysql Redis](https://app.vag
 * [Ansible](http://docs.ansible.com/ansible/index.html)
 
 ### Versions
-> Basebox:centos/6 1707.01
+> Basebox:centos/6 1708.01
 
 * CentOS release 6.9 (Final)
 * MySQL 5.5.x
@@ -39,6 +39,8 @@ Source environment for my [Centos6 php7 Solr Apache Mysql Redis](https://app.vag
 
 * `sudo rm /etc/udev/rules.d/70-persistent-net.rules`
 * `sudo yum clean all`
+* `sudo rm -rf /tmp/*`
+* `sudo rm -f /var/log/wtmp /var/log/btmp`
 * `sudo dd if=/dev/zero of=/bigemptyfile bs=1M`
 * `sudo rm -rf /bigemptyfile`
 * `sudo su`
